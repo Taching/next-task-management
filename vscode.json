@@ -1,0 +1,58 @@
+{
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    },
+    "files.autoSave": "off",
+    "editor.fontFamily": "Operator Mono",
+    "editor.fontSize": 16,
+    "editor.fontWeight": "600",
+    "editor.lineHeight": 30,
+    "editor.letterSpacing": 0.2,
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 2,
+    "editor.cursorBlinking": "solid",
+    "editor.guides.bracketPairs": true,
+    "files.trimTrailingWhitespace": true,
+    "guides.enabled": false,
+    "[javascript]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "breadcrumbs.enabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "octref.vetur"
+    },
+    "editor.formatOnSave": true,
+    "prettier.singleQuote": true,
+    "mssql.connections": [
+      {
+        "server": "{{put-server-name-here}}",
+        "database": "{{put-database-name-here}}",
+        "user": "{{put-username-here}}",
+        "password": ""
+      }
+    ],
+    "terminal.explorerKind": "external",
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.run": "onSave",
+    "[typescript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "liquid.format": true,
+    "vetur.experimental.templateInterpolationService": true,
+    "bracketPairColorizer.depreciation-notice": false,
+    "diffEditor.maxComputationTime": 0,
+    "vetur.validation.interpolation": false,
+    "window.zoomLevel": 2
+  }
