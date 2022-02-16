@@ -2,8 +2,8 @@ import axios from 'axios';
 
 export default class BaseHttpService {
   BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:3000';
-    private _accessToken: any;
-    routerStore: any;
+  private _accessToken: any;
+  routerStore: any;
 
   constructor(routerStore: any) {
     this.routerStore = routerStore;
@@ -37,7 +37,7 @@ export default class BaseHttpService {
       .catch((error) => this._handleHttpError(error));
   }
 
-  _handleHttpError(error: { response: { data: { statusCode: any; }; }; }) {
+  _handleHttpError(error: { response: { data: { statusCode: any } } }) {
     const { statusCode } = error.response.data;
 
     if (statusCode !== 401) {

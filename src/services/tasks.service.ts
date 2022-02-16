@@ -2,17 +2,17 @@ import BaseHttpService from './base-http.service';
 import queryString from 'query-string';
 
 export namespace Typ {
-    export interface task {
-       title: string;
-       description: number | string;
-       status: string;
-    }
+  export interface task {
+    title: string;
+    description: number | string;
+    status: string;
+  }
 }
 export default class TasksService extends BaseHttpService {
-  fetchTasks({ status, search} : {status: string, search: string}) {
+  fetchTasks({ status, search }: { status: string; search: string }) {
     const queryObj = {} as any;
     if (status.length) {
-      queryObj.status  = status;
+      queryObj.status = status;
     }
 
     if (search.length) {
